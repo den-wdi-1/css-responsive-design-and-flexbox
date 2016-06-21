@@ -162,6 +162,7 @@ Rather than go through all of the properties and you can work through the
 Create a responsive class page.
 
 Here's an example of our mobile view:
+
 ![mobile page design](https://github.com/den-wdi-1/css-responsive-design-and-flexbox/blob/master/images/mobile_view.png)
 
 And this is our desktop view:
