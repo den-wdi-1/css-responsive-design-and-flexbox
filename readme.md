@@ -179,7 +179,7 @@ Add the following elements to our starter code:
     2. ``Explore Rails, MEAN Stack, Express, and more``
     3. ``Create a developer portfolio``
   3. The background should be blue for the course summary 
-  4. The font for the course summary should be white
+  4. The text color for the course summary should be white
 3. Use an ipsum generator, [http://generator.lorem-ipsum.info/](http://generator.lorem-ipsum.info/)
 to create 3 paragraphs of text and add it under the course summary.
 
