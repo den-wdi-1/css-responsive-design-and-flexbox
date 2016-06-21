@@ -16,6 +16,7 @@ Or, the dryer Wikipedia definition:
 > Responsive web design (RWD) is a web design approach aimed at crafting sites to provide an optimal viewing experience—easy reading and navigation with a minimum of resizing, panning, and scrolling—across a wide range of devices (from mobile phones to desktop computer monitors).
 
 ### More devices
+[Comment]: # (10:35)
 
 Not that long ago building a successful online presence meant just ensuring that your website worked correctly in all the major desktop browsers. 
 
@@ -56,22 +57,23 @@ Likewise, the paragraphs remain at 50% of screen width, no matter what this scre
 This works to an extent, but we'd really like a few more tools for changing layout based on screen size.
 
 ## The Viewport
-
-Everyone's used Pinch to zoom on their phone. The portion of the page you see while panning is called the viewport. Go to [the Lorem Ipsum Generator](http://www.lipsum.com), open your Chrome Developer Tools,
-look for the magnifying glass in the upper left hand corner, and click the phone icon next to that. If you expand the phone window and shrink it down again, you'll notice that you only see a portion of the
-page, and the rest is represented as a shadow outside the viewport.
-
-When designing sites for mobile, we want to minimize this panning. We can make viewport match the page width on load by using the viewport tag:
+[Comment]: # (10:40) 
+We've seen some problems that can happen if we don't overwrite some of the default properties of a website. One of the properties we need to overwrite is the viewport:
 
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1">
 ```
 
-The user will still be able to pinch and zoom, and there's a way to prevent that, but it's considered to be an accessibility problem, so we won't get into that.
+This command basically says make the viewport the same as the screen.
 
-Some devices start out zoomed in, some don't, and in some cases, it's a browser setting, but using this ensures a consistent experience.
+If we don't do this, a browser gets to choose the default layout and they typically 
+choose to scale to something that looks like the desktop.
+
+Here's an example of a site that hasn't overridden the viewport, 
+[http://www.tcgplayer.com](http://www.tcgplayer.com)
 
 ## Media Queries
+[Comment]: # (10:45)
 
 Media queries are simply a way to conditionally apply styles based on  the device the page is being displayed on.
 
@@ -119,7 +121,71 @@ li {
 }
 ```
 
+## Starter Code 
+[Comment]: # (10:55)
+For this exercise we are going to make the starter code in class. For the starter code
+we'll use this class: 
+
+```css
+.mobile-only {
+  display: block;
+  text-align: center;
+}
+
+@media (min-width: 40em) {
+  .mobile-only {
+    display: none;
+  }
+}
+```
+
+To create our starter code, we need to 
+1. Create a blank html file
+2. Use a blue font for all of the text
+3. Create a h1 tag with ``White Walkers Class Page``
+2. Create text ``Mobile Page`` that only shows up when the page size is less than 40 
+em.
+
+[CFU]: # (How can we do number 4)
+
+## Flex-Box
+
+A newer css property is flex box. Flex box is allows you to manipulate the order and 
+direction of child elements.
+
+Rather than go through all of the properties and you can work through the 
+[Flexbox Froggy](http://flexboxfroggy.com/) tutorial.
+
+## Independent Practice
+[Comment]: # (11:10)
+Create a responsive class page.
+
+![mobile page design]()
+![desktop page design]() 
+
+### Create a mobile view
+To our starter code make add the following elements
+1. The image in assets below the h1 tag
+2. A course summary 
+  1. A h2 tag ``WDI Denver, Da First``
+  2. An unordered list with the following bullets:
+    1. ``Learn Full Stack programming``
+    2. ``Explore Rails, MEAN Stack, Express, and more``
+    3. ``Create a developer portfolio``
+  3. The background should be blue for the course summary 
+  4. The font for the course summary should be white
+3. Use an ipsum generator, [http://generator.lorem-ipsum.info/](http://generator.lorem-ipsum.info/)
+to create 3 paragraphs of text and add it under the course summary.
+
+### Add the responsive formatting
+1. Update the background to red and color to black if you're not on a mobile device
+2. Make the first 2 elements(the course summary and the image) appear on the same 
+line only for non-mobile viewers. Make sure the course summary is on the left. 
+(Think flex-box)
+3. Add ``White Walkers!`` to the image
+
 ## Mobile First
+[Comment]: # (11:40)
 
 You notice how the above looks slightly backwards? That's because we're using a mobile-first strategy. Rather than designing for the biggest, most capable screens first,
 and take things away, we aim for the smallest, least capable screens, ensure they have a good experience, then add things like frosting on a cake. That way, even if we don't
