@@ -151,10 +151,10 @@ em.
 
 ## Flex-Box
 
-A newer css property is flex box. Flex box is allows you to manipulate the order and 
+A newer css property is flex box. Flex box allows you to manipulate the order and 
 direction of child elements.
 
-Rather than go through all of the properties and you can work through the 
+Rather than go through all of the properties, you can work through the 
 [Flexbox Froggy](http://flexboxfroggy.com/) tutorial.
 
 ## Independent Practice
@@ -169,7 +169,7 @@ And this is our desktop view:
 ![desktop page design](https://github.com/den-wdi-1/css-responsive-design-and-flexbox/blob/master/images/desktop_view.png) 
 
 ### Create a mobile view
-To our starter code make add the following elements
+Add the following elements to our starter code:
 
 1. The image in assets below the h1 tag
 2. A course summary 
