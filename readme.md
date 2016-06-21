@@ -139,7 +139,8 @@ we'll use this class:
 }
 ```
 
-To create our starter code, we need to 
+To create our starter code, we need to:
+
 1. Create a blank html file
 2. Use a blue font for all of the text
 3. Create a h1 tag with ``White Walkers Class Page``
@@ -160,11 +161,15 @@ Rather than go through all of the properties and you can work through the
 [Comment]: # (11:10)
 Create a responsive class page.
 
-![mobile page design]()
-![desktop page design]() 
+Here's an example of our mobile view:
+![mobile page design](https://github.com/den-wdi-1/css-responsive-design-and-flexbox/blob/master/images/mobile_view.png)
+
+And this is our desktop view:
+![desktop page design](https://github.com/den-wdi-1/css-responsive-design-and-flexbox/blob/master/images/desktop_view.png) 
 
 ### Create a mobile view
 To our starter code make add the following elements
+
 1. The image in assets below the h1 tag
 2. A course summary 
   1. A h2 tag ``WDI Denver, Da First``
@@ -178,10 +183,14 @@ To our starter code make add the following elements
 to create 3 paragraphs of text and add it under the course summary.
 
 ### Add the responsive formatting
+
 1. Update the background to red and color to black if you're not on a mobile device
 2. Make the first 2 elements(the course summary and the image) appear on the same 
 line only for non-mobile viewers. Make sure the course summary is on the left. 
 (Think flex-box)
+
+### Bonus
+
 3. Add ``White Walkers!`` to the image
 
 ## Mobile First
